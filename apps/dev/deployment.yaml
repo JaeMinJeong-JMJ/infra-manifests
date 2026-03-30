@@ -11,10 +11,11 @@ spec:
   template:
     metadata:
       labels:
+        build: "2"
         app: my-app
     spec:
       containers:
       - name: my-app
-        image: my-app:v1.1
+        image: nginx:alpine
         ports:
         - containerPort: 80
